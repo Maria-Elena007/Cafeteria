@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cafetería Montaña</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Cafetería Montaña</div>
+      
+      <ul class="nav-links">
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#promos">Promociones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    
+    <section class="hero">
+  <h1>Café de Altura, Sabor Inigualable</h1>
+  <p>Disfruta de los mejores granos seleccionados en un ambiente acogedor.</p>
+  <button class="cta-btn" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">Ver Menú</button>
+</section>
+  </header>
+
+  <main>
+    <section id="menu" class="menu-destacado">
+      <h2>Menú Destacado</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <img src="espresso.jpeg" alt="espresso">
+          <h3>Espresso</h3>
+          <p>Intenso y aromático</p>
+          <p class="precio">$6.500</p>
+        </article>
+        <article class="tarjeta">
+          <img src="latte.jpeg" alt="latte">
+          <h3>Café Latte</h3>
+          <p>Suave con espuma cremosa</p>
+          <p class="precio">$3.500</p>
+        </article>
+        <article class="tarjeta">
+          <img src="capuchino.jpeg" alt="capuchino">
+          <h3>Cappuccino</h3>
+          <p>Espuma y café equilibrados</p>
+          <p class="precio">$3.000</p>
+        </article>
+
+        <article class="tarjeta">
+          <img src="moka.jpeg" alt="moka">
+          <h3>Moka</h3>
+          <p>Chocolate y café en armonía</p>
+          <p class="precio">$4.000</p>
+        </article>
+        <article class="tarjeta">
+          <img src="tealatte.jpeg" alt="tealatte">
+          <h3>Tea Latte</h3>
+          <p>Té con leche espumosa</p>
+          <p class="precio">$2.500</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="callout">
+      <p>¡Disfruta 10% de descuento en tu primera visita! Usa el código: CAFECITO10</p>
+    </section>
+
+    <section id="promos" class="promociones-dia">
+      <h2>Promociones del Día</h2>
+      <div class="grid-promos">
+        <article class="promo">
+          <h3>Combo Café + Muffin</h3>
+          <p>Solo $4.500</p>
+        </article>
+        <article class="promo">
+          <h3>Café Helado Grande</h3>
+          <p>30% de descuento</p>
+        </article>
+        <article class="promo">
+          <h3>2x1 en Té Chai</h3>
+          <p>De 14 a 18</p>
+        </article>
+        <article class="promo">
+          <h3>Descuento para estudiantes</h3>
+          <p>15% todos los días</p>
+        </article>
+        <article class="promo">
+          <h3>Meriendas de amigos</h3>
+          <p>4x3</p>
+        </article>
+        <article class="promo">
+          <h3>Para los enamorados</h3>
+          <p>Meriendan 2 paga 1!!!</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="testimonios" class="testimonios">
+      <h2>Testimonios</h2>
+      <div class="testimonios-lista">
+        <blockquote>
+          <p>"El mejor café que he probado. El ambiente es increíble." — Ana G.</p>
+        </blockquote>
+        <blockquote>
+          <p>"Atención excelente y promociones geniales." — Luis M.</p>
+        </blockquote>
+        <blockquote>
+          <p>"Un lugar perfecto para trabajar y relajarse." — Carla T.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <address>
+        <p>Libertad n° 350 - Centro</p>
+        <p>Teléfono: <a href="tel:+5493546434343">+5493546434343</a></p>
+      </address>
+      <button class="call-btn" onclick="window.location.href='tel:+5943546434343'">Llamar Ahora</button>
+        <form action="mailto:contacto@cafeteriamontana.com" method="post" enctype="text/plain" class="contact-form">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            
+            <button type="submit" class="call-btn">Enviar Mensaje</button>
+        </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cafetería de Montaña.</p>
+  </footer>
+</body>
+</html>
+
